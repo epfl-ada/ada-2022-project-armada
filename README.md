@@ -35,6 +35,8 @@ To deepen the analysis and recover the missing values, we use additionnal datase
 
 * [title.crew](https://www.imdb.com/interfaces/): provides the **directors and writers names** for more than a million of films and series. This enrich the analysis made on the ratio of women to man and their impact in cinema by regarding not only the actress but also the writers and directors distribution.
 
+* [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/): contains all the processed summaries from the FreeBase movie database. The process consists in extracting for each character the agent and patent verbs and attributes related to him. This structure reveals the actions they take on others, the actions done to them, and the attributes by which they are described. More details are available in [this article](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf).
+
 
 The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*) is made using 3 matching criteria: `Movie Name`, `Movie Release Date` and `Movie Runtime`. This brings us to about 45,000 matches out of 80,000 films in the Freebase database.
 
@@ -43,66 +45,16 @@ The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*)
 Dire qu'elle hypothèse on a fait, quelle décision ex (se réduire à 5 genres) 
 
 > ### What is the ratio of women to men in cinema ?
-> To investigate, we first explore ratio of women to men in cast overall, then by sorting by region or by gender. 
-> Then, we carry out the same analysis using the additionnal the crew database from IMDB.  
+> 1. To start our investigation, we first explore ratio of women to men in cast overall, then by sorting by region or by gender. 
+> 1. Then, we carry out the same analysis using the additionnal the crew database from IMDB.  
+> 3. Finally, we will try to determine whether there is a correlation between the ratio of women in the film crew and in the film cast.
+>
+>Although the proportion of women in the industry can give us some good initial indicators as to the film industry's gender gap, it omits an even more important indicator. What is the representation of women in these films? Are they playing strong, impactful characters or are they playing roles dominated by men? 
 
-> ### What are the most common subjects tackled by politicians? 
-As a crude example, we can investigate the occurrences of the topic word in the quotations by a politician. We pre-process the data using NLTK to identify commonly used nouns within speaker quotations. As an example, we empirically observe differences between nouns for Trump and Obama, which are discussed in the notebook. The table below represents the 10 most common nouns of each speaker.
-
-<p align="center">
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Donald Trump</th>
-    <th class="tg-0pky">Barack Obama</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">people</td>
-    <td class="tg-0pky">people</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">country</td>
-    <td class="tg-0pky">time</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">president</td>
-    <td class="tg-0pky">president</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">time</td>
-    <td class="tg-0pky">world</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Trump</td>
-    <td class="tg-0pky">country</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">states</td>
-    <td class="tg-0pky">politics</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">lot</td>
-    <td class="tg-0pky">years</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">deal</td>
-    <td class="tg-0pky">democracy</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">world</td>
-    <td class="tg-0pky">things</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">things</td>
-    <td class="tg-0pky">work</td>
-  </tr>
-</tbody>
-</table>
-</p>
-
-Using the initial results of the first question, we conduct additional analysis on the quotes contained within topic clusters. We keep track of the political party of the members within each topic cluster and output the number of quotes each party is associated with for a given cluster.
+> ### What is the impact of women in cinema?
+> 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDB (from the additionnal dataset). Considering the IMDB score, the analysis continues by studying this time the representation of women in the well-received films.
+>2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model that would establish a score of female representation per film based on the passiveness of female character and their relationship to the male roles in this film. 
+>
 
 > ### Do the main subjects change with time?
 Not only do politicians switch parties from time to time, but even opinions within the same party can fluctuate. Our first approach at monitoring quote trends involves counting the quotes containing a certain keyword by date and relating them to Google trends, to figure out whether they follow a similar pattern. The plot below suggests a link between the occurrence of "shooting" in Donald Trump's quotes and the search trend of the word. Furthermore, both can be related to mass shootings that happened in the US, such as the El Paso shooting, which corresponds to the highest spike in both trends.
