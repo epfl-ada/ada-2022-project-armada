@@ -16,7 +16,7 @@ A list of research questions you would like to address during the project.
 --->
 During the project we would like to adress these questions that could provide us with meaningfull insight into whether the cinema is sexist or not.
 
-1. What is the ratio of women to men in cinema ? 
+1. What is the ratio of women to men in cinema ?
 1. What is the impact of women in cinema?
 1. Do these answers change over time and according to the region of the world considered?
 
@@ -82,6 +82,18 @@ Some subjects that may be important for a party are not highlighted in the media
 
 
 ## Proposed timeline :clock10:
+* 03/11/2022 Advanced definiton of our projects and reasearch questions
+* 04/11/2022 Breakdown of the work and first analysis of the dataset
+* 11/11/2022 Cleaning and elaboration of the working dataset
+* 15/11/2022 Brainstorming on detailed key aspects of our project
+* 16/11/2022 Integration of the different analysis & final redaction of the readme
+* 18/11/2022 **Milestone P2**
+* 02/12/2022 **Homework 2 deadline**
+* 23/12/2022 **Milestone P3**
+
+---
+
+
 * 15.11.21 Integration of datasets for all years into current analysis.
 * 19.11.21 Re-do clustering based on topics of interests.
 * 22.11.21 Pause project work.
