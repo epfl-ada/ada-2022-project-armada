@@ -1,6 +1,5 @@
 # Is the cinema sexist ?
 
-
 ## Abstract :memo:
 <!---
 A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
@@ -131,26 +130,17 @@ Some subjects that may be important for a party are not highlighted in the media
 
 ## Proposed timeline :clock10:
 * 03/11/2022 Advanced definiton of our projects and reasearch questions
-* 04/11/2022 Breakdown of the work and first analysis of the dataset
-* 11/11/2022 Cleaning and elaboration of the working dataset
-* 15/11/2022 Brainstorming on detailed key aspects of our project
+* 04/11/2022 Breakdown of the work and first analysis
+* 11/11/2022 Merging of the different work to establish working dataset
+* 15/11/2022 Brainstorming on better description of our project
 * 16/11/2022 Integration of the different analysis & final redaction of the readme
 * 18/11/2022 **Milestone P2**
+* 25/11/2022 Brainstorm for the datastory
 * 02/12/2022 **Homework 2 deadline**
+* 09/12/2022 Perform final analysis and start datastory draft
+* 16/12/2022 Complete the merging of the different parts and first final version of the datastory
+* 20/12/2022 Last proofreading of the datastory and analysis workbook
 * 23/12/2022 **Milestone P3**
-
----
-
-
-* 15.11.21 Integration of datasets for all years into current analysis.
-* 19.11.21 Re-do clustering based on topics of interests.
-* 22.11.21 Pause project work.
-* 26.11.21 **Homework 2 deadline**
-* 28.11.21 Perform final analyses.
-* 08.12.21 Begin developing a rough draft of the datastory.
-* 11.12.21 Complete all code implementations and visualisations relevant to analysis.
-* 14.12.21 Complete datastory.
-* 17.12.21 **Milestone 3 deadline**
 
 ## Team Organization :raised_hands:
 <!---
@@ -169,20 +159,20 @@ A list of internal milestones up until project Milestone 3.
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">@arinaraileanu</td>
-    <td class="tg-0lax">Election prediction<br><br>Web development<br><br>Come up with meaningful visualizations<br><br>Continue exploring the dataset<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">@marjoriecayatte</td>
+    <td class="tg-0lax">General analysis on men/women differences<br><br>Code integration for Milestone P2<br><br>Readme proofreading</td>
   </tr>
   <tr>
-    <td class="tg-0lax">@nitu-catalin1998</td>
-    <td class="tg-0lax">Graph analysis over topics and parties.<br><br>Common words analysis<br><br>Develop the web interface<br><br>Analyze news website bias<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">@maximeleriche</td>
+    <td class="tg-0lax">General analysis on movie countries<br><br>Dataset cleanup and completion regarding countries and regions<br><br>Code integration proofreading<br><br>Readme redaction & proofreading</td>
   </tr>
   <tr>
-    <td class="tg-0lax">@MihaiDavid05</td>
-    <td class="tg-0lax">Graph analysis over topics and parties.<br><br>Topics analysis over time<br><br>Define topic of interests<br><br>Tune clustering<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">@madeleinerobert</td>
+    <td class="tg-0lax">General analysis on movie box office<br><br>General analysis on movie score using IMDb dataset<br><br>Code integration proofreading<br><br>Readme proofreading</td>
   </tr>
   <tr>
-    <td class="tg-0lax">@umerhasan17</td>
-    <td class="tg-0lax">Topics analysis over year<br><br>Develop the web interface<br><br>Integrate datasets of all years<br><br>Develop the final text for the data story</td>
+    <td class="tg-0lax">@tuturta</td>
+    <td class="tg-0lax">General analysis on movie genre<br><br>Gather of IMDb dataset<br><br>Code integration proofreading<br><br>Readme redaction & proofreading</td>
   </tr>
 </tbody>
 </table>
