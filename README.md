@@ -16,7 +16,7 @@ A list of research questions you would like to address during the project.
 --->
 During the project we would like to adress these questions that could provide us with meaningfull insight into whether the cinema is sexist or not.
 
-1. What is the ratio of women to men in cinema ?
+1. What is the ratio of women to men in cinema ? 
 1. What is the impact of women in cinema?
 1. Do these answers change over time and according to the region of the world considered?
 
@@ -27,46 +27,24 @@ List the additional dataset(s) you want to use (if any), and some ideas on how y
 Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant.
 It is your responsibility to check that what you propose is feasible.
 --->
-Given we are interested in quantifying the visibility of the films studied but also knowing the proportion of women in the film crew, beyond simply the casting, additional datasets [title.ratings](https://www.imdb.com/interfaces/) and [title.crew](https://www.imdb.com/interfaces/) from the IMDB platform are used.
+To deepen the analysis and recover the missing values, we use additionnal datasets from IMDB:
 
-A reprendre ici !
---- 
+* [Country API](https://restcountries.com/): Lists countries by world region in order to sort each film in the database by region rather than by country. 
 
-1. We first have to map the Q-code attributes to their corresponding labels. Initially, we attempted to use the [Wikidata API](https://qwikidata.readthedocs.io/en/stable/readme.html) to aggregate all the aliases and the label for each Q-code.
-However, this procedure was slow, so we later decided to use the provided `wikidata_labels_descriptions_quotebank.csv.bz2`
-file for the mapping.
-1. We filter the Wikidata entries to keep only the Q-codes of the speakers with politician as one of their occupations and who belong to at least one party.
-1. We inner join the Quotebank and the Wikidata entries based on the speaker's Q-codes, such that every row would now contain additional labelled information
-about the speaker. This results in a dataframe only containing politician quotes. 
-1. If a `qid` field in Quotebank does not match with any of the `id` values in Wikidata, we have observed that this happens because the Quotebank
-Q-code is not the most recent one. We simply drop all these rows, as they do not have a correspondence in Wikidata.
-1. To attribute a party to a quote, we engineered a dataset where we map each unique speaker Q-code to a list of tuples - `<party_name>, <start_date>, <end_date>`. We are retrieving the dates using Wikidata's `qwikidata` API.
-1. If a speaker belonged to only one political party throughout their life, we associate that party with their quotes, regardless of the date.
-1. If a speaker belonged to multiple parties, we aim to select the party they were part of at the time of the quotation.
+* [title.ratings](https://www.imdb.com/interfaces/): provides **IMDB average rating** and **number of votes** for more than a million of movies and series. This additionnal information allows us to quantify the success and the popularity of a movie and then complete the information provided by the box office revenue in the Freebase Movie dataset which contains around 90% of missing values. 
+
+* [title.crew](https://www.imdb.com/interfaces/): provides the **directors and writers names** for more than a million of films and series. This enrich the analysis made on the ratio of women to man and their impact in cinema by regarding not only the actress but also the writers and directors distribution.
+
+
+The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*) is made using 3 matching criteria: `Movie Name`, `Movie Release Date` and `Movie Runtime`. This brings us to about 45,000 matches out of 80,000 films in the Freebase database.
 
 ## Methods :mag:
-For the current stage of the project, we decided to analyze data from 2018. In our final analysis, we will include data for all the available years. Our research goals are all politically-related. Thus, we use the subset of quotes belonging to politicians, extracted with the methods described above
-in the [additional datasets section](#additional-datasets). 
 
-To ensure a higher confidence in our analysis, we filtered out rows where the probability of the speaker is lower than 0.6. Furthermore, we remove all the rows which have multiple Q-codes associated to their speaker, as it is difficult to distinguish who actually uttered the quote.
+Dire qu'elle hypothèse on a fait, quelle décision ex (se réduire à 5 genres) 
 
-> ### Can politicians' quotes be clustered by subject?
-To investigate this, we create sentence embeddings using the BERTopic. We used two models:
-- Fit and transform quotes from all parties per year to vizualise the topic analysis per year
-<p align="center">
-  <img src="./figures/graph2015.png" alt="Projected Graph of Parties" width="600"/>
-  <img src="./figures/bubblesRD.png" alt="Democratic Party vs. Republican Party" width="600"/>
-</p>
-
-- Fit and transform quotes per party thorugh the years to vizualise topic analysis over time
-<p align="center">
-  <img src="./figures/timeseriesD.png" alt="Democratic Party" width="600"/>
-</p>
-
-We further explored the most common words as entities and parts of speach for the two most quoted parties - Republican and Democratic. Moreover, we predicted the US elections results in each state based on the state mentions by each party members.
-<p align="center">
-  <img src="./figures/states.png" alt="US elections 2020" width="600"/>
-</p>
+> ### What is the ratio of women to men in cinema ?
+> To investigate, we first explore ratio of women to men in cast overall, then by sorting by region or by gender. 
+> Then, we carry out the same analysis using the additionnal the crew database from IMDB.  
 
 > ### What are the most common subjects tackled by politicians? 
 As a crude example, we can investigate the occurrences of the topic word in the quotations by a politician. We pre-process the data using NLTK to identify commonly used nouns within speaker quotations. As an example, we empirically observe differences between nouns for Trump and Obama, which are discussed in the notebook. The table below represents the 10 most common nouns of each speaker.
