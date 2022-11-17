@@ -109,7 +109,7 @@ A list of internal milestones up until project Milestone 3.
 </tbody>
 </table>
 
-## Questions
+## Questions to TA :white_question:
 - Do we have to analyse only one dataset or can we create a large dataset that we will reduce according to the analysis (because of missing value in some features) ?
 - Is implementing a machine learning algorithm a requirement for the project ?
 
