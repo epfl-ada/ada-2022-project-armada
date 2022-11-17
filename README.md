@@ -5,19 +5,17 @@
 A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
 --->
 The CMU Movie Summary Corpus provides a collection of 42,306 movie plot summaries and metadata at both the movie level (including box office revenues, genre and date of release) and character level (including gender and estimated age). 
-We aim to assess the evolution over time of the presence of women in the film industry. First, by focusing on the proportion and average age of actresses in the cast of a film, the study is then nuanced by looking at the characteristics of the characters played by these actresses using the Stanford CoreNLP-processed summaries. To deepen these results, the analysis is repeated first only on the most impactful films (number of votes on IMDB and box office revenue) and then, grouped by region of the world. 
-Finally, the results of the analyzes are compared to social progress in the world of work in general to conclude on a possible correlation. (149/150 mots)
+We aim to assess the evolution over time of the presence of women in the film industry. First, we focus on the proportion of actresses in the casting of a film. Then, we study the impact of women by looking at features of the characters played by these actresses in the most successfull movies using the Stanford CoreNLP-processed summaries. Finally, we look at the evolution over time and offer an historical perpective.
 
-Ajout d'un schéma comme dans https://github.com/epfl-ada/ada-2021-project-acmu/blob/main/README.md ?
 ## Research Questions :grey_question:
 <!---
 A list of research questions you would like to address during the project.
 --->
-During the project we would like to adress these questions that could provide us with meaningfull insight into whether the cinema is sexist or not.
+During the project we would like to adress the following questions to try to answer our problematic.
 
 1. What is the ratio of women to men in cinema ?
 1. What is the impact of women in cinema?
-1. Do these answers change over time and according to the region of the world considered?
+1. Do these answers change over time ?
 
 <a name="additional-datasets"></a>
 ## Additional Datasets :fax:
@@ -41,44 +39,26 @@ The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*)
 
 ## Methods :mag:
 
-Dire qu'elle hypothèse on a fait, quelle décision ex (se réduire à 5 genres) 
+After our first analyses of the data, we chose to make some hypothesis for our futur work :
+- Knowing that the paper as been published in 2013, we will only consider movies until 2012 and not the few movies that have release dates between 2013 and 2016.
+- We will only consider the five principal movie genres, which are : drama, comedy, romance, action and thriller. "Black and white" is listed as a genre in the dataset and is the forth more represented one but we chose not to consider it. Indeed, it does not seem to be a genre that will be meaningful in the analysis about the impact of women in cinema.
 
 > ### What is the ratio of women to men in cinema ?
 > 1. To start our investigation, we first explore ratio of women to men in cast overall, then by sorting by region or by gender. 
-> 1. Then, we carry out the same analysis using the additionnal the crew database from IMDB.  
+> 2. Then, we carry out the same analysis using the additionnal crew database from IMDB.  
 > 3. Finally, we will try to determine whether there is a correlation between the ratio of women in the film crew and in the film cast.
 >
 >Although the proportion of women in the industry can give us some good initial indicators as to the film industry's gender gap, it omits an even more important indicator. What is the representation of women in these films? Are they playing strong, impactful characters or are they playing roles dominated by men? 
 
 > ### What is the impact of women in cinema?
 > 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDB (from the additionnal dataset). Considering the IMDB score, the analysis continues by studying this time the representation of women in the well-received films.
->2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model that would establish a score of female representation per film based on the passiveness of female character and their relationship to the male roles in this film. 
+> 2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model that would establish a score of female representation per film based on the passiveness of female character and their relationship to the male roles in this film. 
 >
 
 > ### Do the main subjects change with time?
-Not only do politicians switch parties from time to time, but even opinions within the same party can fluctuate. Our first approach at monitoring quote trends involves counting the quotes containing a certain keyword by date and relating them to Google trends, to figure out whether they follow a similar pattern. The plot below suggests a link between the occurrence of "shooting" in Donald Trump's quotes and the search trend of the word. Furthermore, both can be related to mass shootings that happened in the US, such as the El Paso shooting, which corresponds to the highest spike in both trends.
-
-<p align="center">
- <img src="./figures/trump_quotes.png" alt="trump quotes" width=500"/>
-</p>
-                                                                    
-While examining approaches for answering our third research question, we discovered an important aspect of the dataset. Quotes may be referenced in news websites at a different time than originally spoken. Furthermore, news quotes may not be a direct representation of what politicians actually talk about. By definition, quotes are cherry-picked by authors that might be biased. For example, some websites are owned by politicians and controversial subjects are over-emphasised in the media.
-
-<!---
-> Can website biases influence our findings on the actual subjects politicians talk about?
-
-Some subjects that may be important for a party are not highlighted in the media. 
-
-
-(or synonyms of the word) 
-
- Initially, the analysis can be based on a list of pre-defined topics which we deem relevant to the speaker or party. We can implement an end-to-end approach by using the results of the sentence classifier in the first question to create a dynamic list of topics to look for.
-
-* feasibility of the clusters 
-* scaling the current analysis to multiple years
--->  
-                                                                    
-
+> 1. We first analyse the evolution of ratio of women to men over time. We can also carry this analysis with the crew members.
+> 2. We look at the evolution of the importance of women in movies by analysing the score established in the previous part through time.
+> 3. Finally and optionally, the results of the analysis are compared to social progress in the world of work in general to conclude on a possible correlation.
 
 ## Proposed timeline :clock10:
 * 03/11/2022 Advanced definiton of our projects and reasearch questions
@@ -128,3 +108,8 @@ A list of internal milestones up until project Milestone 3.
   </tr>
 </tbody>
 </table>
+
+## Questions
+- Do we have to analyse only one dataset or can we create a large dataset that we will reduce according to the analysis (because of missing value in some features) ?
+- Is implementing a machine learning algorithm a requirement for the project ?
+
