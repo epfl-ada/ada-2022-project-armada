@@ -28,14 +28,14 @@ To deepen the analysis and recover the missing values, we use the following addi
 
 * [Country API](https://restcountries.com/): List countries by world region in order to get region for each movie in the database where country is reported. We can therefore conduct an analysis based on region.
 
-* [title.ratings](https://www.imdb.com/interfaces/): provides **IMDB average rating** and **number of votes** for more than a million of movies and series. This additionnal information allows us to quantify the success and the popularity of a movie and then complete the information provided by the box office revenue in the Freebase Movie dataset which contains around 90% of missing values. 
+* [title.ratings](https://www.imdb.com/interfaces/): provides **IMDb average rating** and **number of votes** for more than a million of movies and series. This additionnal information allows us to quantify the success and the popularity of a movie and then complete the information provided by the box office revenue in the Freebase Movie dataset which contains around 90% of missing values. 
 
 * [title.crew](https://www.imdb.com/interfaces/): provides the **directors and writers names** for more than a million of films and series. This enriches the analysis made on the ratio of women to men and their impact in cinema by regarding not only the actresses distribution but also the writers and directors distribution.
 
 * [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/): contains all the processed summaries from the FreeBase movie database. The process consists in extracting for each character the agent and patent verbs and attributes related to him. This structure reveals the actions they take on others, the actions done to them, and the attributes by which they are described. More details are available in [this article](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf).
 
 
-The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*) is made using 3 matching criteria: `Movie Name`, `Movie Release Date` and `Movie Runtime`. This brings us to about 45,000 matches out of 80,000 films in the Freebase database.
+The link between the **Freebase movie ID** with the **IMDb movie ID** (*tconst*) is made using 3 matching criteria: `Movie Name`, `Movie Release Date` and `Movie Runtime`. This brings us to about 45,000 matches out of 80,000 films in the Freebase database.
 
 ## Methods :mag:
 
@@ -45,13 +45,13 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 
 > ### What is the ratio of women to men in cinema ?
 > 1. To start our investigation, we first explore ratio of women to men in overall cast, then by sorting by region or by genre. 
-> 2. Then, we carry out the same analysis using the additionnal crew database from IMDB.  
+> 2. Then, we carry out the same analysis using the additionnal crew database from IMDb.  
 > 3. Finally, we will try to determine whether there is a correlation between the ratio of women in the film crew and in the film cast.
 >
 >Although the proportion of women in the industry can give us some good initial indicators as to the film industry gender gap, it omits an even more important indicator. What is the representation of women in these movies? Are they playing strong, impactful characters or are they playing roles dominated by men? 
 
 > ### What is the impact of women in cinema?
-> 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDB (from the additionnal dataset). Considering the IMDB score, we continue the analysis continues by studying this time the representation of women in the well-received films.
+> 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDb (from the additionnal dataset). Considering the IMDb score, we continue the analysis continues by studying this time the representation of women in the well-received films.
 > 2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model that would establish a score of female representation per movie based on the passiveness of female characters and their relationship to the male roles in this movie. 
 >
 
