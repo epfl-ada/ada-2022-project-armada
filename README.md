@@ -1,4 +1,4 @@
-# Is the cinema sexist ?
+# Cinema: a patriarchal industry?
 
 ## Abstract :memo:
 <!---
