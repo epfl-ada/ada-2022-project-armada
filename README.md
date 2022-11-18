@@ -26,7 +26,7 @@ It is your responsibility to check that what you propose is feasible.
 --->
 To deepen the analysis and recover the missing values, we use the following additionnal datasets:
 
-* [Country API](https://restcountries.com/): List countries by world region in order to get region for each movie in the database where country is reported. We can therefore  
+* [Country API](https://restcountries.com/): List countries by world region in order to get region for each movie in the database where country is reported. We can therefore conduct an analysis based on region.
 
 * [title.ratings](https://www.imdb.com/interfaces/): provides **IMDB average rating** and **number of votes** for more than a million of movies and series. This additionnal information allows us to quantify the success and the popularity of a movie and then complete the information provided by the box office revenue in the Freebase Movie dataset which contains around 90% of missing values. 
 
