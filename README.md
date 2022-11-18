@@ -32,7 +32,7 @@ To deepen the analysis and recover the missing values, we use the following addi
 
 * [title.crew](https://www.imdb.com/interfaces/): provides the **directors and writers names** for more than a million of films and series. This enriches the analysis made on the ratio of women to men and their impact in cinema by regarding not only the actresses distribution but also the writers and directors distribution.
 
-* [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/): contains all the processed summaries from the FreeBase movie database. The process consists in extracting for each character the agent and patent verbs and attributes related to him. This structure reveals the actions they take on others, the actions done to them, and the attributes by which they are described. More details are available in [this article](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf).
+* [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/): contains all the processed summaries from the FreeBase movie database. The process consists in extracting for each character the agent and patent verbs and attributes related to him. This structure reveals **the actions they take on others, the actions done to them, and the attributes by which they are described**. More details are available in [this article](http://www.cs.cmu.edu/~dbamman/pubs/pdf/bamman+oconnor+smith.acl13.pdf).
 
 
 The link between the **Freebase movie ID** with the **IMDB movie ID** (*tconst*) is made using 3 matching criteria: `Movie Name`, `Movie Release Date` and `Movie Runtime`. This brings us to about 45,000 matches out of 80,000 films in the Freebase database.
@@ -57,7 +57,7 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 
 > ### Do the main subjects evolve over time?
 > 1. We first analyze the evolution of ratio of women to men over time. We can also carry this analysis with the crew members.
-> 2. We look at the evolution of the importance of women in movies by analysing the score established in the previous part through time.
+> 2. We look at the evolution of the importance of women in movies by studying the score established in the previous part through time.
 > 3. Finally and optionally, the results of the analysis are compared to other parameters of gender gap (number of working women for example) to conclude on a potential correlation.
 
 ## Proposed timeline :clock10:
@@ -73,6 +73,7 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 * 16/12/2022 Complete the merging of the different parts and first final version of the datastory
 * 20/12/2022 Last proofreading of the datastory and analysis workbook
 * 23/12/2022 **Milestone P3**
+
 
 ## Team Organization :raised_hands:
 <!---
@@ -112,4 +113,5 @@ A list of internal milestones up until project Milestone 3.
 ## Questions to TA :grey_question:
 - Do we have to work on only one dataset or can we create a large dataset that we will reduce according to the analysis (because of missing value in some features) ?
 - Is implementing a machine learning algorithm a requirement for the project ?
+- Does the majority of our results should be extracted from the main dataset (CMU) ?
 
