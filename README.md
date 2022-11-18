@@ -66,13 +66,13 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 * **11/11/2022** Merging of the different works to establish working dataset
 * **15/11/2022** Brainstorming on clearer description of our project
 * **16/11/2022** Integration of the different analyses & final redaction of the readme
-* **18/11/2022** <span style="color:red">**Milestone P2**</span>
+* **18/11/2022** **<span style="color:red">Milestone P2</span>**
 * **25/11/2022** Brainstorm for the datastory
-* **02/12/2022** <span style="color:red">**Homework 2 deadline**</span>
+* **02/12/2022** **<span style="color:red">Homework 2 deadline</span>**
 * **09/12/2022** Perform final analysis and start datastory draft
 * **16/12/2022** Complete the merging of the different parts and first final version of the datastory
 * **20/12/2022** Last proofreading of the datastory and analysis workbook
-* **23/12/2022** <span style="color:red">**Milestone P3**</span>
+* **23/12/2022** **<span style="color:red">Milestone P3</span>**
 
 
 ## Team Organization :raised_hands:
