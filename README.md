@@ -14,8 +14,8 @@ A list of research questions you would like to address during the project.
 During the project we would like to adress the following questions in order to answer to our problematic:
 
 1. What is the ratio of women to men in cinema ?
-1. What is the impact of women in cinema? *vague: having one woman acting in a movie? all-women cast? on the revenue?*
-1. Do these answers change over time ? *subquestions of the 2 other*
+1. What is the impact of women in cinema? **<span style="color:green">vague: having one woman acting in a movie? all women cast, on the revenue? </span>**
+1. Do these answers change over time ? **<span style="color:green">subquestions of the 2 others</span>**
 
 <a name="additional-datasets"></a>
 ## Additional Datasets :fax:
@@ -39,8 +39,8 @@ The link between the **Freebase movie ID** with the **IMDb movie ID** (*tconst*)
 
 ## Methods :mag:
 
-*not precise enough*
-*check or specify that there is a bias coming from the data*
+**<span style="color:green">not precise enough
+*check or specify that there is a bias coming from the data</span>**
 After our first analyses of the data, we chose to make some hypotheses for our futur work :
 - The datasets provided have been extracted in 2012 from Freebase, thus we will only consider movies until 2012 and not the few movies that have release dates between 2013 and 2016.
 - We will only consider these five principal movie genre: drama, comedy, romance, action and thriller. "Black and white" is listed as a genre in the dataset and is the forth most represented one but we chose not to consider it. Indeed, it does not seem to be a genre that will be meaningful for our analysis on the impact of women in cinema.
@@ -53,15 +53,14 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 >Although the proportion of women in the industry can give us some good initial indicators as to the film industry gender gap, it omits an even more important indicator. What is the representation of women in these movies? Are they playing strong, impactful characters or are they playing roles dominated by men? 
 
 > ### What is the impact of women in cinema?
-> 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDb (from the additionnal dataset). Considering the IMDb score, we continue the analysis continues by studying this time the representation of women in the well-received films. *you need to precise steps to come to conclusino*
-> 2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model *which one, what data, which form?* that would establish a score of female representation per movie based on the passiveness of female characters *how is it measured?* and their relationship to the male roles in this movie. 
+> 1. As a first approach, we are interested in the representation of women in popular films, regarding both the box office revenue and number of votes on IMDb (from the additionnal dataset). Considering the IMDb score, we continue the analysis continues by studying this time the representation of women in the well-received films. **<span style="color:green">you need to precise steps to come to conclusion</span>**
+> 2. By working with the [Stanford CoreNLP-processed summaries](http://www.cs.cmu.edu/~ark/personas/), we expect to develop a mathematical model **<span style="color:green">ywhich one, what data, which form? </span>** that would establish a score of female representation per movie based on the passiveness of female characters *how is it measured?* and their relationship to the male roles in this movie. 
 >
 
 > ### Do the main subjects evolve over time?
 > 1. We first analyze the evolution of ratio of women to men over time. We can also carry this analysis with the crew members.
 > 2. We look at the evolution of the importance of women in movies by studying the score established in the previous part through time.
-> 3. Finally and optionally, the results of the analysis are compared to other parameters of gender gap (number of working women for example) to conclude on a potential correlation. *how? what can you conclude?*
-
+> 3. Finally and optionally, the results of the analysis are compared to other parameters of gender gap (number of working women for example) to conclude on a potential correlation. **<span style="color:green">how? what can you conclude? </span>**
 ## Proposed timeline :clock10:
 * **03/11/2022** Detailed choice of our project and determination of reasearch questions
 * **04/11/2022** Breakdown of the work into individual tasks and first analyses
