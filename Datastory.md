@@ -24,9 +24,11 @@ We can first gain a better understanding of the disparities in female representa
 
 ### I.2 A gender analysis of movie genres
 
-In this second point of view, we will delve deeper into the representation of women within specific movie genres. It is possible that certain genres may have more or less gender balance in terms of the characters and personnel involved. By examining the gender ratios within different genres, we can better understand the trends and patterns in female representation within the film industry.
+In this second point of view, We will analyze the representation of women in specific movie genres and consider whether certain genres have more or less gender balance in terms of characters and personnel. This will provide insight into trends and patterns of female representation in the film industry.
 
-We will only consider the main genre in the film industry, namely "Comedy", "Romance", "Thriller", "Drama", and "Action".
+In this analysis, we will focus on the main genres in the film industry, including comedy, romance, thriller, drama, and action.
+
+### I.3 Time view
 
 **The data reveals a disparity between the number of men and women in the film industry, regardless of region, genre, or time period, men are more prevalent than women.**
 
