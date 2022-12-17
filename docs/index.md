@@ -51,3 +51,36 @@ It is not enough to simply look at the number of men and women in the industry t
 ## III. Fame in perspective
 
 ## IV. Conclusion
+
+
+<html>
+  <head>
+    <!-- Load the Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <!-- Create a div to hold the chart -->
+    <div id="myDiv"></div>
+    <script>
+      // Set chart data
+      var data = [{
+        x: [1, 2, 3, 4, 5],
+        y: [1, 2, 4, 8, 16]
+      }];
+
+      // Set chart layout
+      var layout = {
+        title: 'Line Chart',
+        xaxis: {
+          title: 'X axis'
+        },
+        yaxis: {
+          title: 'Y axis'
+        }
+      };
+
+      // Plot the chart
+      Plotly.newPlot('myDiv', data, layout);
+    </script>
+  </body>
+</html>
