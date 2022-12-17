@@ -18,7 +18,7 @@ Let's now explore the data through different point of views.
 
 We can first gain a better understanding of the disparities in female representation in the film industry across different regions. We can anticipate that the ratio of women in the industry will vary across regions, as gender equality is not uniform across the globe.
 
-[PLOT]
+[PLOT with ratio by region]
 
 [OBSERVATIONS FROM THE PLOT]
 
@@ -28,7 +28,7 @@ In this second point of view, We will analyze the representation of women in spe
 
 In this analysis, we will focus on the main genres in the film industry, including comedy, romance, thriller, drama, and action.
 
-[PLOT]
+[PLOT with ratio par movie genre]
 
 [OBSERVATIONS FROM THE PLOT]
 
@@ -36,7 +36,7 @@ In this analysis, we will focus on the main genres in the film industry, includi
 
 In this third perspective, we will examine how the representation of women in the film industry has changed over time. This analysis will allow us to identify any trends or patterns in the representation of women in the film industry and consider whether there has been progress towards gender equality in the industry. By looking at the data over a period of time, we can also consider the potential factors that may have influenced changes in female representation such as historical events.
 
-[PLOT]
+[PLOT with ratio by year]
 
 [OBSERVATIONS FROM THE PLOT]
 
@@ -46,8 +46,38 @@ In this third perspective, we will examine how the representation of women in th
 
 It is not enough to simply look at the number of men and women in the industry to accurately assess the role of women in the industry. We must also consider the quality of their representation, which can be determined by examining the types of characters they portray and whether or not they are given leading roles. By exploring these factors, we can gain a better understanding of how gender is portrayed in the industry.
 
-## II. The archetype of the character
+## II. The archetypical role
+
+### II.1 Adjective
+
+We have access to data from the CMU movie summary that shows how male and female characters are typically characterized based on the adjectives used to describe them. We can also create a report on the typical male and female character archetypes, including few features such as their ages or heights, and the frequency with which their names appear in the summary. This latter metric indicates how often the character is the main protagonist of the movie.
+
+[Cloud of word]
+
+[Observations]
+
+### II.2 Protagonist probability
+
+We analyzed the plot summary data in the dataset and searched for character names to determine which characters are most likely to be the main protagonists. This allowed us to evaluate whether female characters are less likely to be featured prominently in the storylines.
+
+[GRAPH avec share of appearance in the summary]
+
+[Observation]
+
+### II.3 Other metrics
+
+Using the actor characteristics, we can determine the average height and age of each character, and examine whether there is a difference in these attributes between main characters and non-main characters.
+
+[GRAPH avec average height and age main cahracter/non-main character]
+
+[Observation]
+
+[Conclusion on this part: avoir une sorte de fiche technique avec adjectifs principaux, taille ,age...]
+
+In this section, we focused on describing the typical male and female characters and how being a main character affects these characteristics. Another aspect we could consider is the fame of the actors portraying the characters and whether there are differences based on their gender.
 
 ## III. Fame in perspective
+
+
 
 ## IV. Conclusion
