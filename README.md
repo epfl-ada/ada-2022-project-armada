@@ -1,5 +1,5 @@
 # Cinema: a patriarchal industry?
-(Datastory webpage)[https://epfl-ada.github.io/ada-2022-project-armada/]
+[Datastory webpage](https://epfl-ada.github.io/ada-2022-project-armada/)
 ## Abstract :memo:
 <!---
 A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
