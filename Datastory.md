@@ -12,9 +12,25 @@ And finally investigate how men compare to women in terms of their roles in the 
 
 ## I. Overview of the data
 
-The data reveals a disparity between the number of men and women in the film industry, regardless of region, genre, or time period, men are more prevalent than women.
+Let's now explore the data through different point of views.
 
-The data shows that, over the past 60 years, there has been a gradual decrease in the gender gap in the film industry. This is likely due to the increased availability of data and the increased representation of women in the industry. Despite this progress, there is still a significant disparity between men and women in the film industry, with men still being more prevalent than women.
+### I.1 A look at the film industry by continent
+
+We can first gain a better understanding of the disparities in female representation in the film industry across different regions. We can anticipate that the ratio of women in the industry will vary across regions, as gender equality is not uniform across the globe.
+
+[PLOT]
+
+[OBSERVATIONS FROM THE PLOT]
+
+### I.2 A gender analysis of movie genres
+
+In this second point of view, we will delve deeper into the representation of women within specific movie genres. It is possible that certain genres may have more or less gender balance in terms of the characters and personnel involved. By examining the gender ratios within different genres, we can better understand the trends and patterns in female representation within the film industry.
+
+We will only consider the main genre in the film industry, namely "Comedy", "Romance", "Thriller", "Drama", and "Action".
+
+**The data reveals a disparity between the number of men and women in the film industry, regardless of region, genre, or time period, men are more prevalent than women.**
+
+**The data shows that, over the past 60 years, there has been a gradual decrease in the gender gap in the film industry. This is likely due to the increased availability of data and the increased representation of women in the industry. Despite this progress, there is still a significant disparity between men and women in the film industry, with men still being more prevalent than women.**
 
 It is not enough to simply look at the number of men and women in the industry to accurately assess the role of women in the industry. We must also consider the quality of their representation, which can be determined by examining the types of characters they portray and whether or not they are given leading roles. By exploring these factors, we can gain a better understanding of how gender is portrayed in the industry.
 
