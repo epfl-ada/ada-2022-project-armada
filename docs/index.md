@@ -37,6 +37,7 @@ In this analysis, we will focus on the main genres in the film industry, includi
 In this third perspective, we will examine how the representation of women in the film industry has changed over time. This analysis will allow us to identify any trends or patterns in the representation of women in the film industry and consider whether there has been progress towards gender equality in the industry. By looking at the data over a period of time, we can also consider the potential factors that may have influenced changes in female representation such as historical events.
 
 **IMPORT HTML CODE**
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://github.com/epfl-ada/ada-2022-project-armada/blob/16d5a94053be4c8e31edfdc24be77b32006ecee4/docs/piechart.html" height="525" width="100%"></iframe>
 
 [OBSERVATIONS FROM THE PLOT]
 
