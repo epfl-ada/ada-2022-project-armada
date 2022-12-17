@@ -28,7 +28,17 @@ In this second point of view, We will analyze the representation of women in spe
 
 In this analysis, we will focus on the main genres in the film industry, including comedy, romance, thriller, drama, and action.
 
-### I.3 Time view
+[PLOT]
+
+[OBSERVATIONS FROM THE PLOT]
+
+### I.3 A temporal analysis of female representation in the film industry
+
+In this third perspective, we will examine how the representation of women in the film industry has changed over time. This analysis will allow us to identify any trends or patterns in the representation of women in the film industry and consider whether there has been progress towards gender equality in the industry. By looking at the data over a period of time, we can also consider the potential factors that may have influenced changes in female representation such as historical events.
+
+[PLOT]
+
+[OBSERVATIONS FROM THE PLOT]
 
 **The data reveals a disparity between the number of men and women in the film industry, regardless of region, genre, or time period, men are more prevalent than women.**
 
