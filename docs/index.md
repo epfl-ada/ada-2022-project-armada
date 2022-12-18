@@ -138,7 +138,7 @@ We analyzed the plot summary data in the dataset and searched for character name
 
 Using the actor characteristics, we can determine the average height and age of each character, and examine whether there is a difference in these attributes between main characters and non-main characters.
 
-<img src="figures/average_female_male_cinema.jpg"/>
+<img src="figures/average_female_male_cinema.jpg" alt= "female_male_description" width = 60% heigth = auto/>
 
 [Observation]
 
