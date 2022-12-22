@@ -53,44 +53,75 @@ It is not enough to simply look at the number of men and women in the industry t
 
 ## The archetypical role
 
-### II.1 Adjective
-
 Let's create a report on the typical male and female character archetypes, including few features such as their ages or heights, and which adjectives are used to qualify them.
 
 [Cloud of word]
 
+*The dataset used to gather the adjectives was created by the paper Learning Latent Personas of Film Characters given in the CMU dataset. It classifies 501 characters into 72 character types, which is way smaller than the other dataset used, therefore the result has to be taken with a pinch of salt.*
 
+As we can see, women are mostly described by their physical traits (blonde, beauty) however the intellectual features are not glorifying (dumb, brainless).
 
+On the contrary, the typical male character is depicted as the hero (hero, hunter, father etc.) with more interesting and complex features (jealous, corporate, crazy, corrupt).
 
+This comparison highlights a clear materialization of women in the cinema, which is not the case for men who have roles with more depth. In addition women tend to be younger, perhaps to star better-looking actresses.
 
-and the frequency with which their names appear in summaries. This latter metric indicates how often the character is the main protagonist of the movie, depending on its gender.
+Knowing women are attributed a more simplistic role than man, does it necessarily mean that they are secondary actresses?
 
+We analyzed the plot summary data in the dataset and searched for character names to determine how likely an actress is to be a main character, and same for actors.
 
+[% de chances d'etre acteur principal homme/femme]
 
+[Analyse a faire]
 
+To evaluate the differences between men and women, this analysis of the representation of the actor/actress through the character may not be enough. Specifically it does not convey how the movie is received by the public, and whether the actors manage to build a career.
 
-### II.2 Protagonist probability
+## Famous as a woman?
 
-We analyzed the plot summary data in the dataset and searched for character names to determine which characters are most likely to be the main protagonists. This allowed us to evaluate whether female characters are less likely to be featured prominently in the storylines.
+### Movie popularity and quality
+A natural metrics to assess the success of a movie is its rating by the public on IMDb. Let's check if the average movie rating of a given actor differs on its gender.
 
-[GRAPH avec share of appearance in the summary]
+[GRAPH]
 
-[Observation]
+As we can see, both gender obtain an average movie rating of 6.1, and the distributions are about the same.
+Thus the quality of the filmography is independent of the gender, but another interesting point of view is the movie popularity.
 
-### II.3 Other metrics
+To check this, we analyse the women ratio in regards to the number of votes.
 
-Using the actor characteristics, we can determine the average height and age of each character, and examine whether there is a difference in these attributes between main characters and non-main characters.
+[Graph heat map]
 
-<img src="figures/average_female_male_cinema.jpg" alt= "female_male_description" width = 60% heigth = auto/>
+The general trend is that the higher the number of votes, the smaller the female ratio is.
 
-[Observation]
+In addition, there is no movie with more than one million votes and with a ratio higher than 50% despite the fact some movies are rated more than two million times.
 
-[Conclusion on this part: avoir une sorte de fiche technique avec adjectifs principaux, taille ,age...]
+A possible explanation could be that highly popular movies are action movies, which as we saw have the smallest female ratio.
 
-In this section, we focused on describing the typical male and female characters and how being a main character affects these characteristics. Another aspect we could consider is the fame of the actors portraying the characters and whether there are differences based on their gender.
+Women seem not to be a factor for a movie popularity, does it mean they cannot build a proper career?
 
-## III. Fame in perspective
+### Career
 
+An available data to us is how many movies an actor played in. We base the quality of a career on that feature.
 
+[GRAPH]
+
+Look at how many movies a single actor can play in, up to 200!
+However it is not the case for all actors... actresses only reach up to 100 movies.
+
+This difference highlights a general trend: the average career of an actress is 40-movie long, whereas actors play in average in 65 movies.
 
 ## IV. Conclusion
+
+Time to come back to our initial question: is the cinema a patriarchal industry?
+
+Our results highlight different phenomena:
+
+- The industry portray less women than men regardless of the country, the movie genre, and the time period.
+- Women have less significant role, [à completer] 
+- Women build smaller careers, and appear in less popular movies.
+
+While these results suggest that the industry is patriarchal, some indicators show that there is a degree of equality as well. Indeed movie ratings, and chance of being the lead actor seems to be gender independent.
+
+However the movie industry is a complex machine, and includes many other factors than the one we have in the dataset (casting selection, crewmembers, etc.).
+
+Another bias regarding the data comes from the choice of the movie made beforehand as there could have been a prior selection based on hidden covariates.
+
+Our work can be completed with other analysis, such as [Article NATURE] which uses the dialogs to implement a Bechdel test.
