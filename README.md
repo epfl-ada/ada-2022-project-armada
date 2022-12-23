@@ -5,7 +5,7 @@
 A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
 --->
 The CMU Movie Summary Corpus provides a collection of 42,306 movie plot summaries and metadata at both the movie level (including box office revenue, genre and date of release) and the character level (including gender and estimated age). 
-Our goal is to assess women place in the movie industry given different period of time, region, or movie genre. In addition we will examine how the average character is depicted depending on its gender, and finally analyse whether careers and ratings are influenced this factor.
+Our goal is to assess women place in the movie industry given different periods of time, regions, or movie genre. In addition we will examine how the average character is depicted depending on its gender, and finally analyse whether careers and ratings are different between genders.
 
 ## Research Questions :grey_question:
 <!---
@@ -13,9 +13,9 @@ A list of research questions you would like to address during the project.
 --->
 During the project we would like to adress the following questions in order to answer to our problematic:
 
-1. Are women under respresented in the cinema industry? What is the situation and how has it evolved over time and region?
-2. How are characters represented? Have the traditional depictions of women characters in the industry changed?
-3. Does gender impacts either the success of a movie or the career of the actor?
+1. Are women less respresented in the cinema industry? What is the situation and how has it evolved over time and region?
+2. How are characters represented? Has the traditional depiction of women characters in movies changed?
+3. Does gender impact the success of a movie? Is there a difference in the career of actors and actresses ?
 
 <a name="additional-datasets"></a>
 ## Additional Datasets :fax:
@@ -34,40 +34,41 @@ The link between the **Freebase movie ID** with the **IMDb movie ID** (*tconst*)
 
 ## Methods :mag:
 
-**<span style="color:green">not precise enough
-*check or specify that there is a bias coming from the data</span>**
 After our first analyses of the data, we chose to make some hypotheses for our futur work :
 
 - The datasets provided have been extracted in 2012 from Freebase, thus we will only consider movies until 2012 and not the few movies that have release dates between 2013 and 2016.
 - We will only consider these five principal movie genre: drama, comedy, romance, action and thriller. "Black and white" is listed as a genre in the dataset and is the forth most represented one but we chose not to consider it. Indeed, it does not seem to be a genre that will be meaningful for our analysis on the impact of women in cinema.
+- We are conscient that there is a bias coming from the data as it only represents a sample of the real data. Therefore, we have to keep in mind that the conclusions we draw can be applied **to this particular dataset** and are not necessarily representative of the whole industry. 
 
-> ### Are women under respresented in the cinema industry? What is the situation and how has it evolved over time and region?
+> ### Are women less respresented in the cinema industry? What is the situation and how has it evolved over time and region?
 > 1. We complete the data with the movie region of origin, and sort all movies by region, and then by genre.
-> 2. We compute the female ratio on the actor, and create graphs to visualize how present women are depending on these factors.
+> 2. We compute the female ratio by movies, as the percentage of female in the cast of the movie. 
+> 3. We visualize the differences in female ratio by region of origin and by genre to assess whether there are significant differences. 
+> 4. We plot the evolution of this ratio by region and by genre over time to determine whether this tendency is constant or if it has changed over time. 
 
-> ### How are characters represented? Have the traditional depictions of women characters in the industry changed?
-> 1. We first use the tvtropes dataset to get the adjective that qualify a set of characters, and get a set of adjective for men and women.
+> ### How are characters represented? Has the traditional depiction of women characters in movies changed?
+> 1. We first use the tvtropes dataset to extract the adjectivs which are the most frequently used to qualify a set of characters identified by Bamman & al. By doing this for male and female characters, we have an insight into how a typical character is described in the dataset depending in the gender. 
 > 2. We compute the average height and age of actors depending on the gender.
 > 3. We check which characters name appear at least once in a plot summary,[Arthur partie pour expliquer les chiffres qu'on a]
 
-> ### Does gender impacts either the success of a movie or the career of the actor?
-> 1. We use the IMDb dataset to get the average rating of each movie, and for each gender look at the distribution of actor per average movie rating
-> 2. We compute the female ratio depending on the number of votes on the movie
-> 3. Build the CCDF of the amaount of movies per actor, depending on the gender
+> ### Does gender impact the success of a movie? Is there a difference in the career of actors and actresses ?
+> 1. We use the IMDb dataset to get the average rating of each movie. For each actor or actress, we computed the average movie rating of the movies in which he or she played, and looked at the distribution of average movie rating by gender. 
+> 2. For each movie, we computed the number of votes and plotted the distribution of this metrics depending on the female ratio to assess whether users voted more for movies with a higher ratio of male characters. 
+> 3. We built the CCDF of the number of movies in which each actor/actresse played. We wanted to determine whether actors played individually in more movies than actresses, to reflect how the gender can influence the career of an actor/actress. 
 > 
 
 ## Proposed timeline :clock10:
-* **03/11/2022** Detailed choice of our project and determination of reasearch questions
-* **04/11/2022** Breakdown of the work into individual tasks and first analyses
-* **11/11/2022** Merging of the different works to establish working dataset
-* **15/11/2022** Brainstorming on clearer description of our project
+* **03/11/2022** Detailed choice of our project and determination of reasearch questions.
+* **04/11/2022** Breakdown of the work into individual tasks and first analyses. 
+* **11/11/2022** Merging of the different individual parts to establish working dataset. 
+* **15/11/2022** Brainstorm on precise goal of our project and establishment of clear tasks. 
 * **16/11/2022** Integration of the different analyses & final redaction of the readme
 * **18/11/2022** **<span style="color:red">Milestone P2</span>**
-* **25/11/2022** Brainstorm for the datastory
+* **25/11/2022** Brainstorm for the datastory. 
 * **02/12/2022** **<span style="color:red">Homework 2 deadline</span>**
-* **09/12/2022** Perform final analysis and start datastory draft
-* **16/12/2022** Complete the merging of the different parts and first final version of the datastory
-* **20/12/2022** Last proofreading of the datastory and analysis workbook
+* **09/12/2022** Perform final analysis and start datastory draft. Start of the website. 
+* **16/12/2022** Complete the merging of the different parts and first final version of the datastory. Continue the website. Completion of the Readme. 
+* **20/12/2022** Last proofreading of the datastory, Jupyter notebook, and Readme. Improve and finish the website. 
 * **23/12/2022** **<span style="color:red">Milestone P3</span>**
 
 
@@ -89,7 +90,7 @@ A list of internal milestones up until project Milestone 3.
 <tbody>
   <tr>
     <td class="tg-0lax">@marjoriecayatte</td>
-    <td class="tg-0lax">General analysis on men/women differences (age/height)<br><br>Code integration for Milestone P2<br><br>Readme proofreading</td>
+    <td class="tg-0lax">General analysis on men/women differences (age/height)<br><br>Code integration and merging for Milestone P3<br><br>Readme proofreading</td>
   </tr>
   <tr>
     <td class="tg-0lax">@maximeleriche</td>
