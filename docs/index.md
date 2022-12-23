@@ -197,8 +197,8 @@ Time to come back to our initial question: is the cinema a patriarchal industry?
 Our results highlight different phenomena:
 
 - The industry portray less women than men regardless of the country, the movie genre, and the time period.
-- Women have less significant role, [à completer] 
-- Women build smaller careers, and appear in less popular movies.
+- Women have less glorifying role, but they tend to be the headliner more often
+- Women build smaller careers, and appear in less popular movies
 
 While these results suggest that the industry is patriarchal, some indicators show that there is a degree of equality as well. Indeed movie ratings, and chance of being the lead actor seems to be gender independent.
 
