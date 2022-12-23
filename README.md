@@ -92,19 +92,19 @@ A list of internal milestones up until project Milestone 3.
 <tbody>
   <tr>
     <td class="tg-0lax">@marjoriecayatte</td>
-    <td class="tg-0lax">General analysis on men/women differences (age/height)<br><br>Code integration and merging for Milestone P3<br><br>Readme proofreading</td>
+    <td class="tg-0lax">General analysis on men/women differences (age/height)<br><br>Code integration and merging for Milestone P3<br><br>Plotting graphs on differences between genre and countries </td>
   </tr>
   <tr>
     <td class="tg-0lax">@maximeleriche</td>
-    <td class="tg-0lax">General analysis on movie countries<br><br>Dataset cleanup and completion regarding countries and regions<br><br>Code integration proofreading<br><br>Readme redaction & proofreading</td>
+    <td class="tg-0lax">General analysis on movie countries<br><br>Dataset cleanup and completion regarding countries and regions<br><br> Analysis on differences of rating by gender<br><br>Writing of the datastory</td>
   </tr>
   <tr>
     <td class="tg-0lax">@madeleinerobert</td>
-    <td class="tg-0lax">General analysis on movie box office<br><br>General analysis on movie score using IMDb dataset<br><br>Code integration proofreading<br><br>Readme proofreading</td>
+    <td class="tg-0lax">General analysis on movie box office and score (IMDB)<br><br>Analysis on differences of movie popularity by gender<br><br>Website proofreading<br><br>Writing of the datastory</td>
   </tr>
   <tr>
     <td class="tg-0lax">@tuturta</td>
-    <td class="tg-0lax">General analysis on movie genre<br><br>Gather of IMDb dataset<br><br>Code integration proofreading<br><br>Readme redaction & proofreading</td>
+    <td class="tg-0lax">General analysis on movie genre<br><br>Gather of IMDb dataset<br><br>Analysis on the archetypical role<br><br> Website realisation</td>
   </tr>
 </tbody>
 </table>
