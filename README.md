@@ -41,20 +41,22 @@ After our first analyses of the data, we chose to make some hypotheses for our f
 - We are conscient that there is a bias coming from the data as it only represents a sample of the real data. Therefore, we have to keep in mind that the conclusions we draw can be applied **to this particular dataset** and are not necessarily representative of the whole industry. 
 
 > ### Are women less respresented in the cinema industry? What is the situation and how has it evolved over time and region?
-> 1. We complete the data with the movie region of origin, and sort all movies by region, and then by genre.
-> 2. We compute the female ratio by movies, as the percentage of female in the cast of the movie. 
-> 3. We visualize the differences in female ratio by region of origin and by genre to assess whether there are significant differences. 
-> 4. We plot the evolution of this ratio by region and by genre over time to determine whether this tendency is constant or if it has changed over time. 
+> 1. Clean of the data set with corrupted or empty values, and computation of the women to men (WtM) overall.
+> 2. Completion the data with the movie region of origin with the help of the Country API, removing of the empty entries, and adaptation the country names when required. Then sorting the movies based on the region of origin, and gathering of the Wtm ratio for each category.
+> 3. Same ananlysis with the genre. Gathering of all unique genres and retaining the most significant ones to conduct a new analysis of the WtM ratio based on the movie genre.
+> 4. Cleaning of the data format of the movie release date, and sorting of the values by chronological order, to then obtain the WtM by region and/or genre for each year.
+> 5. Visualisation of the differences in WtM ratio by region of origin, by genre, by period of time.
+> 6. Conclusion over the WtM for the different parameters
 
 > ### How are characters represented? Has the traditional depiction of women characters in movies changed?
-> 1. We first use the tvtropes dataset to extract the adjectivs which are the most frequently used to qualify a set of characters identified by Bamman & al. By doing this for male and female characters, we have an insight into how a typical character is described in the dataset depending in the gender. 
-> 2. We compute the average height and age of actors depending on the gender.
-> 3. We check which characters name appear at least once in a plot summary,[Arthur partie pour expliquer les chiffres qu'on a]
+> 1. Usage of tvtropes dataset to extract the adjectivs which are the most frequently used to qualify a set of characters identified by Bamman & al. By doing this for male and female characters, we have an insight into how a typical character is described in the dataset depending in the gender.
+> 2. Computation of the average height and age of actors depending on the gender.
+> 3. Check which characters name appear at least once in a plot summary, computation of the percentage of appeareance in the summaries for men and women
 
 > ### Does gender impact the success of a movie? Is there a difference in the career of actors and actresses ?
-> 1. We use the IMDb dataset to get the average rating of each movie. For each actor or actress, we computed the average movie rating of the movies in which he or she played, and looked at the distribution of average movie rating by gender. 
-> 2. For each movie, we computed the number of votes and plotted the distribution of this metrics depending on the female ratio to assess whether users voted more for movies with a higher ratio of male characters. 
-> 3. We built the CCDF of the number of movies in which each actor/actresse played. We wanted to determine whether actors played individually in more movies than actresses, to reflect how the gender can influence the career of an actor/actress. 
+> 1. Usage of the IMDb dataset to get the average rating of each movie. For each actor or actress, computation of the average movie rating of the movies in which he or she played, and looked at the distribution of average movie rating by gender. 
+> 2. For each movie, computation of the number of votes and plotted the distribution of this metrics depending on the female ratio to assess whether users voted more for movies with a higher ratio of male characters.
+> 3. Creation of the CCDF of the number of movies in which each actor/actresse played to determine whether actors played individually in more movies than actresses, to reflect how the gender can influence the career of an actor/actress. 
 > 
 
 ## Proposed timeline :clock10:
