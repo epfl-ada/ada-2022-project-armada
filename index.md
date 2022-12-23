@@ -173,7 +173,7 @@ Women seem not to be a factor for a movie popularity, does it mean they cannot b
 
 ---
 
-An available data to us is how many movies an actor played in. We base the quality of a career on that feature.
+The number of roles an actor has had is often used to evaluate the quality of their career. While other factors, such as the strength of their performances and the quality of the films they have appeared in, are also important, the quantity of film roles can give us a general sense of an actor's career.
 
 ---
 
